@@ -13,7 +13,7 @@ pip3 install django
 python3 manage.py migrate
 
 
-./manage.py createsuperuser
+python3 ./manage.py createsuperuser
 (rsa, rsablockchain)
 
-./manage.py runserver
+python3 ./manage.py runserver
