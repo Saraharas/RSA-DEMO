@@ -9,3 +9,5 @@ pip3 install virtualenv
 . env/bin/activate
 
 pip3 install django
+
+python3 manage.py migrate
