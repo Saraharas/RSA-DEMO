@@ -5,5 +5,7 @@ Tutorial for making a website: https://dzone.com/articles/bounty-tutorial-develo
 
 
 pip3 install virtualenv
+
 . env/bin/activate
+
 pip3 install django
