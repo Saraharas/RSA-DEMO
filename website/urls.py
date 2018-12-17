@@ -19,6 +19,7 @@ from demo import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.hello, name='hello'),
+    #path('', views.hello, name='hello'),
     path('whoami/', views.whoami),
+    path('', views.text_form, name='text_form'),
 ]
