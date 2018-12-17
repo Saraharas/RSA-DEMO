@@ -58,3 +58,19 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.hello, name='hello')
 ]
+
+in demo/views.py:
+def whoami(request):
+	sex = request.GET['sex']
+	name = request.GET['name']
+	response = 'You are ' + name + ' and of sex ' + sex
+	return HttpResponse(response)
+	
+in website/urls.py:
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', views.hello, name='hello'),
+    path('whoami/', views.whoami),
+]
+
+To open the page run server and request url http://localhost:8000/whoami/?name=greg&sex=male
