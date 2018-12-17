@@ -1,4 +1,4 @@
-	"""website URL Configuration
+"""website URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
@@ -19,5 +19,6 @@ from demo import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.hello, name='hello')
+    path('', views.hello, name='hello'),
+    path('whoami/', views.whoami),
 ]
